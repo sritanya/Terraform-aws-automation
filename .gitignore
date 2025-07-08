@@ -1,0 +1,35 @@
+# === Terraform Files ===
+.terraform/                     # Provider plugins and other temp files
+*.tfstate                      # Terraform state files (sensitive!)
+*.tfstate.backup
+terraform.tfstate*
+crash.log                      # Crash logs from failed Terraform runs
+*.tfplan                       # Terraform plan output files
+*.lock.hcl                     # Optional: lock file, usually kept, but can be ignored in some cases
+
+# === AWS Lambda Zip Artifacts ===
+*.zip                          # ZIPs like ec2_control.zip (if generated during build)
+
+# === Python Related (Lambda Code) ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+.Python
+
+# === macOS System Files ===
+.DS_Store
+
+# === IDE/Editor Files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Logs and Temp ===
+*.log
+*.tmp
